@@ -1,0 +1,24 @@
+/* .slick-track { */
+/*   width: 3000px; */
+/*   display: flex; */
+/* } */
+/* .slick-slide { */
+/*   width: 300px !important; */
+/* } */
+.slider-item {
+  height: 8.7rem;
+  position: relative;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.slider-img {
+  width: 100%;
+}
+
+.swiper-slide {
+  flex: 0 0 15rem;
+}
+
+/* .swiper-wrapper { */
+/*   padding-right: 3rem; */
+/* } */
