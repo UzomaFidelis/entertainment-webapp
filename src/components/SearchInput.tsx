@@ -2,9 +2,9 @@ import SearchIcon from "./icons/SearchIcon";
 
 const SearchInput = ({ placeholder }: { placeholder: string }) => {
   return (
-    <div className="relative">
+    <div className="relative lg:pr-8">
       <span
-        className="absolute left-0 top-0 bottom-0 flex items-center pl-1"
+        className="absolute left-0 top-0 bottom-0 flex items-center pl-1 md:pl-0 lg:pl-3"
         aria-hidden
       >
         <SearchIcon />
@@ -13,7 +13,7 @@ const SearchInput = ({ placeholder }: { placeholder: string }) => {
         type="text"
         aria-label="Search"
         placeholder={placeholder}
-        className="w-full bg-darkNight text-white pl-11 py-1 rounded"
+        className="w-full bg-darkNight font-light text-white pl-11 py-1 rounded md:text-[1.5rem] md:pl-14 lg:text-[1.6rem]"
       />
     </div>
   );

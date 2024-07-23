@@ -2,7 +2,7 @@ const NavTvIcon = ({ active }: { active?: boolean }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
-    className="w-4 group "
+    className="w-4 group md:w-5"
     aria-hidden
   >
     <path

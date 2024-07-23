@@ -2,7 +2,9 @@ import { ShowInfo } from "./types";
 
 const IMG_DIR = "/assets/thumbnails";
 
-export const trendingMovies: ShowInfo[] = [
+export const trendingMovies: (ShowInfo & {
+  sliderThumbnail: { small: string; large: string };
+})[] = [
   {
     name: "Beyond Earth",
     year: 2019,
@@ -12,6 +14,10 @@ export const trendingMovies: ShowInfo[] = [
       small: `${IMG_DIR}/beyond-earth/regular/small.jpg`,
       medium: `${IMG_DIR}/beyond-earth/regular/medium.jpg`,
       large: `${IMG_DIR}/beyond-earth/regular/large.jpg`,
+    },
+    sliderThumbnail: {
+      small: `${IMG_DIR}/beyond-earth/trending/small.jpg`,
+      large: `${IMG_DIR}/beyond-earth/trending/large.jpg`,
     },
   },
   {
@@ -24,6 +30,10 @@ export const trendingMovies: ShowInfo[] = [
       medium: `${IMG_DIR}/bottom-gear/regular/medium.jpg`,
       large: `${IMG_DIR}/bottom-gear/regular/large.jpg`,
     },
+    sliderThumbnail: {
+      small: `${IMG_DIR}/bottom-gear/trending/small.jpg`,
+      large: `${IMG_DIR}/bottom-gear/trending/large.jpg`,
+    },
   },
   {
     name: "Undiscovered Cities",
@@ -34,6 +44,10 @@ export const trendingMovies: ShowInfo[] = [
       small: `${IMG_DIR}/undiscovered-cities/regular/small.jpg`,
       medium: `${IMG_DIR}/undiscovered-cities/regular/medium.jpg`,
       large: `${IMG_DIR}/undiscovered-cities/regular/large.jpg`,
+    },
+    sliderThumbnail: {
+      small: `${IMG_DIR}/undiscovered-cities/trending/small.jpg`,
+      large: `${IMG_DIR}/undiscovered-cities/trending/large.jpg`,
     },
   },
   {
@@ -46,6 +60,10 @@ export const trendingMovies: ShowInfo[] = [
       medium: `${IMG_DIR}/1998/regular/medium.jpg`,
       large: `${IMG_DIR}/1998/regular/large.jpg`,
     },
+    sliderThumbnail: {
+      small: `${IMG_DIR}/1998/trending/small.jpg`,
+      large: `${IMG_DIR}/1998/trending/large.jpg`,
+    },
   },
   {
     name: "Dark Side of the Moon",
@@ -56,6 +74,10 @@ export const trendingMovies: ShowInfo[] = [
       small: `${IMG_DIR}/dark-side-of-the-moon/regular/small.jpg`,
       medium: `${IMG_DIR}/dark-side-of-the-moon/regular/medium.jpg`,
       large: `${IMG_DIR}/dark-side-of-the-moon/regular/large.jpg`,
+    },
+    sliderThumbnail: {
+      small: `${IMG_DIR}/dark-side-of-the-moon/trending/small.jpg`,
+      large: `${IMG_DIR}/dark-side-of-the-moon/trending/large.jpg`,
     },
   },
 ];
